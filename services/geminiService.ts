@@ -3,7 +3,7 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { FileData, GradingResult } from "../types";
 
 export const gradeExam = async (answerKey: FileData, studentWork: FileData, apiKey: string): Promise<GradingResult> => {
-  const ai = new GoogleGenAI({ apiKey: apiKey || process.env.GEMINI_API_KEY || '' });
+  const ai = new GoogleGenAI({ apiKey: apiKey || process.env.API_KEY || '' });
   
   const systemInstruction = `
     Bạn là chuyên gia chấm thi OMR chính xác 100%. Nhiệm vụ của bạn là đối soát bài làm của học sinh với đáp án gốc.
@@ -41,7 +41,7 @@ export const gradeExam = async (answerKey: FileData, studentWork: FileData, apiK
   `;
 
   const response = await ai.models.generateContent({
-    model: "gemini-3-pro-preview",
+    model: "gemini-3-flash-preview",
     contents: [
       {
         parts: [
@@ -66,7 +66,7 @@ export const gradeExam = async (answerKey: FileData, studentWork: FileData, apiK
     config: {
       systemInstruction,
       responseMimeType: "application/json",
-      temperature: 0, // Tuyệt đối không để AI sáng tạo, chỉ lấy kết quả thực tế
+      temperature: 0,
       topP: 0.1,
       topK: 1,
       responseSchema: {
