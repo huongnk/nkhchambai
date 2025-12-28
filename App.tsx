@@ -369,8 +369,8 @@ const App: React.FC = () => {
 
       <footer className="mt-32 py-16 bg-blue-950 text-blue-300 text-center text-sm border-t-[12px] border-blue-600">
         <div className="max-w-7xl mx-auto px-6 space-y-6">
-          <h4 className="font-black text-white text-2xl uppercase italic">NKH SMART GRADER AI</h4>
-          <p className="font-bold text-blue-400">Tốc độ tối đa với công nghệ Gemini Flash</p>
+          <h4 className="font-black text-white text-2xl uppercase italic">NKH - PHẦN MỀM CHẤM BÀI THÔNG MINH</h4>
+          <p className="font-bold text-blue-400">Xin mời kết bạn Fb: https://www.facebook.com/nguyenkhachuongqv2</p>
           <div className="pt-8 grid grid-cols-1 md:grid-cols-2 gap-8 text-xs font-bold uppercase tracking-widest opacity-60">
              <div>Tác giả: <span className="text-white">GV Nguyễn Khắc Hưởng</span></div>
              <div>Đơn vị: <span className="text-white">THPT Quế Võ số 2 - Bắc Ninh</span></div>
