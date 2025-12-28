@@ -1,0 +1,7 @@
+{
+  "name": "NKH - Ứng dụng Chấm Bài Thông Minh",
+  "description": "Ứng dụng hỗ trợ giáo viên chấm bài tự động bằng AI. So sánh bài làm của học sinh với đáp án để xuất ra điểm trắc nghiệm, trả lời ngắn và tự luận, sau đó xuất file Excel.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
